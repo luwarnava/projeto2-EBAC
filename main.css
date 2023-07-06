@@ -63,7 +63,7 @@ h1 {
 }
 
 input[type="text"],
-input[type="tel"],
+input[type="number"],
 input[type="email"] {
   display: flex;
   width: 200px;

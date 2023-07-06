@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
       event.preventDefault(); // Impede o envio do formulário
   
       var nome = document.getElementById("nome").value;
-      var telefone = document.getElementById("telefone").value;
+      var number = document.getElementById("number").value;
       var email = document.getElementById("email").value;
   
       var contato = {
         nome: nome,
-        telefone: telefone,
+        number: number,
         email: email
       };
   
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function adicionarContato(contato) {
       var elementoContato = document.createElement("div");
       elementoContato.innerHTML = "<strong>Nome:</strong> " + contato.nome + "<br>" +
-                                  "<strong>Telefone:</strong> " + contato.telefone + "<br>" +
+                                  "<strong>Telefone:</strong> " + contato.number + "<br>" +
                                   "<strong>E-mail:</strong> " + contato.email + "<br><br>";
   
       listaContatos.appendChild(elementoContato);
