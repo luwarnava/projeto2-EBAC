@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agenda de Contatos</title>
+
+    <link rel="stylesheet" type="text/css" href="./main.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="half">
+    <img src="./assets/icon-image.jpg" alt="icone de imagem">
+    <h1>Adicionar contatos:</h1>
+
+    <form id="form-contato">
+      <label class="names" for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>    
+      
+      <label class="names" for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+      
+      <label class="names" for="email">E-mail:</label>
+      <input type="email" id="email" name="email">
+      
+      <input type="submit" value="Salvar">
+    </form>
+      </div>
+  
+    <div class="half scroll">
+      <h2>📑 Lista de contatos:</h2>
+      <div id="lista-contatos"></div>
+    </div>
+  
+    <script src="script.js"></script>
+
+  </div>
+  </body>
+</html>
